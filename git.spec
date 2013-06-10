@@ -2,12 +2,12 @@
 
 Summary:	Distributed version control system
 Name:		git
-Version:	1.8.2
+Version:	1.8.3
 Release:	1
 License:	GPL v2
 Group:		Development/Tools
 Source0:	http://git-core.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	210834d73c857931c3da34a65eb3e597
+# Source0-md5:	d91b6099fb6763cf92c696977a247060
 URL:		http://git-scm.com/
 BuildRequires:	asciidoc
 BuildRequires:	autoconf
