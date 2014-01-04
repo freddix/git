@@ -2,12 +2,12 @@
 
 Summary:	Distributed version control system
 Name:		git
-Version:	1.8.5
+Version:	1.8.5.2
 Release:	1
 License:	GPL v2
 Group:		Development/Tools
 Source0:	http://git-core.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	16448b1cfd62fcbe738729edc6279e14
+# Source0-md5:	df8519044f9880f3687d863d99245282
 URL:		http://git-scm.com/
 BuildRequires:	asciidoc
 BuildRequires:	autoconf
@@ -28,6 +28,7 @@ Requires:	findutils
 Requires:	grep
 Requires:	sed
 Suggests:	openssh-clients
+Obsoletes:	python-Git
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -289,13 +290,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorlib}/Git
 %{perl_vendorlib}/Git/I18N.pm
 %{perl_vendorlib}/Git/IndexInfo.pm
-
 %{_mandir}/man3/Git.3pm*
-
-%files -n python-Git
-%defattr(644,root,root,755)
-%dir %{py_sitescriptdir}/git_remote_helpers
-%dir %{py_sitescriptdir}/git_remote_helpers/git
-%{py_sitescriptdir}/git_remote_helpers/*.py[co]
-%{py_sitescriptdir}/git_remote_helpers/git/*.py[co]
 
