@@ -2,12 +2,12 @@
 
 Summary:	Distributed version control system
 Name:		git
-Version:	2.3.2
+Version:	2.4.1
 Release:	1
 License:	GPL v2
 Group:		Development/Tools
 Source0:	https://www.kernel.org/pub/software/scm/git/%{name}-%{version}.tar.xz
-# Source0-md5:	56701b3b1815c8bbfd7b43b4773adad7
+# Source0-md5:	aed4a96723f600dfc879a2eb58e6e673
 URL:		http://git-scm.com/
 BuildRequires:	asciidoc
 BuildRequires:	autoconf
